@@ -23,6 +23,8 @@ public final class Slow {
   public static void main(String[] args) throws Exception {
     EventLoopGroup group = new NioEventLoopGroup();
 
+    logger.info("main....");
+
     try {
       ServerBootstrap serverBootstrap = new ServerBootstrap();
       serverBootstrap.group(group);
